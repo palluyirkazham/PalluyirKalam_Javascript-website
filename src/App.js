@@ -33,22 +33,7 @@ const router = createBrowserRouter(
 
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path='/kaaninilam' element={<KaaniNilam />} />
-      <Route path='/ulaa' element={<Ulaa />} />
-      <Route path='/pallikoodam' element={<PalliKoodam />} />
-      <Route path='/kulu' element={<Kulu />} />
-      <Route path='/kadai' element={<Kadai />} />
-      <Route path='/meichalkaadu' element={<MeichalKaadu />} />
-      <Route path='/uyir' element={<Uyir />} />
-      <Route path='/thottam' element={<Thottam />} />
-      <Route path='/admin' element={<AdminLayout />}>
-        <Route index element={<AdminLogin />} />
-        <Route path='panel' element={<PanelLayout />} >
-          <Route index element={<AdminPanel />} />
-          <Route path='update' element={<UpdateActivity />} />
-        </Route>
-
-      </Route>
+      
       <Route path='*' element={<PageNotFound />} />
     </Route>
 
